@@ -1,0 +1,200 @@
+# BharatSign Bridge - Technology Stack
+
+## Frontend
+- React 18+
+- TypeScript 5+
+- Vite 5+
+- Tailwind CSS 3+
+- Headless UI (for accessible components)
+- Heroicons (icon set)
+- React Query (server state)
+- React Hook Form (form validation)
+- Zod (schema validation)
+- Lodash (utility functions)
+- Date-fns (date handling)
+- i18next (internationalization)
+- React Router v6 (routing)
+- Axios (HTTP client)
+- Socket.io-client (WebSocket, if needed)
+- ServiceWorker (PWA capabilities)
+- Workbox (service worker library)
+
+## Backend
+- Python 3.11+
+- FastAPI 0.110+
+- Pydantic v2 (data validation)
+- SQLAlchemy 2.0+ (ORM)
+- Alembic (database migrations)
+- AsyncPG (PostgreSQL async driver)
+- Uvicorn (ASGI server)
+- Gunicorn (production WSGI server)
+- Python-Jose (JWT handling)
+- Passlib (password hashing)
+- Python-Multipart (form parsing)
+- Starlette (background tasks)
+- Redis-py (Redis client)
+- Boto3 (S3-compatible storage)
+- Celery (distributed task queue)
+- Redis (Celery broker/backend)
+- Sentry SDK (error tracking)
+- Prometheus Client (metrics)
+- Structlog (structured logging)
+- PyJWT (JSON Web Tokens)
+- Email-validator (email validation)
+- Phober (input validation library)
+
+## AI & Machine Learning
+- Google Gemini API (Flash-family models) - MVP
+- TensorFlow (future custom models)
+- PyTorch (future custom models)
+- OpenCV (computer vision preprocessing)
+- MediaPipe (hand landmark detection - future)
+- NumPy (numerical computing)
+- Pandas (data manipulation)
+- Scikit-learn (traditional ML)
+- ONNX (model interchange)
+- ONNX Runtime (inference)
+- TensorFlow Serving (model serving)
+- Triton Inference Server (model serving)
+
+## Database
+- PostgreSQL 15+ (primary relational database)
+- Redis 7+ (caching, session storage, Celery broker)
+- SQLAlchemy 2.0 (ORM)
+- Alembic (migrations)
+- PgBouncer (connection pooling - optional)
+
+## Storage
+- AWS S3 / MinIO (object storage for media assets)
+- IPFS (decentralized storage - future consideration)
+- Local filesystem (development only)
+
+## Testing
+### Frontend
+- Vitest (unit testing)
+- React Testing Library (component testing)
+- Cypress (end-to-end testing)
+- Jest (alternative test runner)
+- Testing Library DOM (testing utilities)
+- Axios Mock Adapter (HTTP mocking)
+- MSW (Mock Service Worker)
+
+### Backend
+- Pytest (unit and integration testing)
+- Pytest-asyncio (async testing)
+- Pytest-mock (mocking)
+- Factory Boy (test factories)
+- Faker (test data generation)
+- Testcontainers (integration testing with Docker)
+- HTTPX (async HTTP client for testing)
+- Respx (HTTPX mocking)
+
+### Accessibility
+- Axe-core (accessibility testing)
+- Storybook (component documentation and visual testing)
+- Chromatic (visual regression testing)
+- Lighthouse CI (performance and accessibility audits)
+
+## Infrastructure & DevOps
+- Docker (containerization)
+- Docker Compose (local development orchestration)
+- Kubernetes (container orchestration)
+- Helm (Kubernetes package manager)
+- Kustomize (Kubernetes configuration)
+- Terraform (infrastructure as code)
+- AWS CloudFormation (AWS-specific IaC)
+- GitHub Actions (CI/CD)
+- GitLab CI/CD (alternative CI/CD)
+- Argo CD (GitOps continuous deployment)
+- Flux (GitOps continuous deployment)
+- NGINX Ingress Controller (Kubernetes ingress)
+- Traefik (alternative ingress controller)
+- Cert-Manager (TLS certificate management)
+- Prometheus (monitoring and alerting)
+- Grafana (dashboard and visualization)
+- Alertmanager (alert handling)
+- Loki (log aggregation)
+- Promtail (log shipping agent)
+- Elasticsearch (log storage - alternative to Loki)
+- Kibana (log visualization - alternative to Grafana)
+- Jaeger (distributed tracing)
+- Zipkin (alternative tracing)
+- OpenTelemetry (telemetry instrumentation)
+- HashiCorp Vault (secret management)
+- AWS Secrets Manager (secret management - AWS)
+- SOPS (secret file encryption)
+- Trivy (container vulnerability scanning)
+- Snyk (dependency vulnerability scanning)
+- Dependabot (automated dependency updates)
+- Renovate (alternative dependency updates)
+- SonarQube (code quality analysis)
+- CodeClimate (alternative code quality)
+- Bandit (Python security linting)
+- Safety (Python dependency security check)
+
+## Development Tools
+- Prettier (code formatting)
+- ESLint (JavaScript/TypeScript linting)
+- Black (Python code formatting)
+- Ruff (Python linter and formatter)
+- MyPy (static type checking for Python)
+- TypeScript Compiler (tsc)
+- Vite Plugin PWA (progressive web app)
+- Vite Plugin SVGR (SVG as React components)
+- Dotenv-cli (environment variable management)
+- Concurrently (run multiple processes)
+- Nodemon (auto-restart for Node.js - dev only)
+- Airplane (auto-reload for Python - dev only)
+
+## Browser APIs & Standards
+- WebRTC (getUserMedia for camera/microphone)
+- MediaRecorder API (video capture)
+- Web Speech API (speech recognition and synthesis)
+- IndexedDB / Cache API (client-side storage)
+- Service Workers (offline capabilities)
+- WebSocket API (real-time communication)
+- Fetch API (HTTP requests)
+- SVG (scalable vector graphics)
+- Canvas 2D API (graphics rendering)
+- Web Animations API (animations)
+- Intersection Observer (lazy loading)
+- Resize Observer (element size changes)
+- Mutation Observer (DOM changes)
+- LocalStorage / SessionStorage (client-side storage)
+- Clipboard API (copy/paste functionality)
+- Notification API (desktop notifications)
+- Vibration API (haptic feedback)
+- Battery Status API (power management)
+- Page Visibility API (tab visibility)
+- Navigation Timing API (performance measurement)
+
+## Design & Prototyping
+- Figma (UI/UX design)
+- Adobe XD (alternative design tool)
+- Storybook (component library development)
+- Figjam (collaborative whiteboarding)
+- Miro (online collaboration)
+
+## Project Management
+- Git (version control)
+- GitHub (code hosting and collaboration)
+- GitHub Projects (project tracking)
+- Jira (issue tracking - alternative)
+- Trello (kanban board - alternative)
+- Notion (documentation and wikis)
+- Confluence (enterprise wiki - alternative)
+- Slack (team communication)
+- Microsoft Teams (alternative communication)
+- Zoom (video conferencing)
+
+## Security & Compliance
+- OWASP ZAP (security testing)
+- Burp Suite (professional security testing)
+- Nessus (vulnerability scanning)
+- Qualys (cloud security platform)
+- GDPR compliance tooling
+- WCAG 2.1 AA validation tools
+- Screen readers (NVDA, JAWS, VoiceOver - testing)
+- Color blindness simulators (testing)
+- Contrast checkers (accessibility)
+- Automated accessibility testing (axe-core, pa11y)
