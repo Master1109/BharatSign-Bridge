@@ -1,0 +1,60 @@
+{
+  "app": { "name": "ISL Connect", "tagline": "Sign. See it become words." },
+  "nav": { "home": "Home", "dictionary": "Dictionary", "skip": "Skip to main content" },
+  "theme": { "toggle": "Toggle dark mode", "light": "Light", "dark": "Dark" },
+  "language": { "label": "Language" },
+  "capture": {
+    "idleTitle": "Ready when you are",
+    "idleBody": "Turn on your camera and sign — the recognized meaning will appear below.",
+    "enableCamera": "Turn on camera",
+    "start": "Start signing",
+    "stop": "Stop and translate",
+    "recording": "Recording",
+    "processing": "Reading your sign\u2026",
+    "switchCamera": "Switch camera",
+    "permissionDeniedTitle": "Camera access needed",
+    "permissionDeniedBody": "ISL Connect can't read your signs without camera access. Check your browser's site settings and allow the camera, then try again.",
+    "retry": "Try again",
+    "errorTitle": "Something went wrong",
+    "errorBody": "The last clip couldn't be translated. Check your connection and try again.",
+    "unsupportedTitle": "Camera not supported",
+    "unsupportedBody": "This browser doesn't support camera capture. Try the latest Chrome, Edge or Safari."
+  },
+  "result": {
+    "heading": "Recognized meaning",
+    "confidence": "Confidence",
+    "empty": "Nothing recognized yet",
+    "share": "Share",
+    "shared": "Copied to clipboard",
+    "save": "Save to favorites",
+    "saved": "Saved to favorites",
+    "unsave": "Remove from favorites"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "Signs you save will show up here for quick reuse.",
+    "remove": "Remove"
+  },
+  "dictionary": {
+    "title": "ISL Dictionary",
+    "subtitle": "Signs this MVP can currently recognize",
+    "search": "Search signs\u2026",
+    "empty": "No signs match your search."
+  },
+  "feedback": {
+    "button": "Send feedback",
+    "title": "How's it going?",
+    "ratingLabel": "Rate your experience",
+    "commentLabel": "Tell us more (optional)",
+    "commentPlaceholder": "What worked, what didn't\u2026",
+    "cancel": "Cancel",
+    "send": "Open email to team",
+    "subject": "ISL Connect feedback",
+    "emailSentHint": "This opens your email app with the details filled in."
+  },
+  "footer": {
+    "builtFor": "Built for Smart India Hackathon",
+    "rights": "All signs and recognitions are processed to help two people understand each other."
+  },
+  "common": { "close": "Close", "loading": "Loading\u2026" }
+}

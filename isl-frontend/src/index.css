@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme — misty base, deep teal primary, marigold accent (single spend) */
+    --color-base: 242 244 241;
+    --color-surface: 255 255 255;
+    --color-ink: 22 28 25;
+    --color-muted: 91 102 96;
+    --color-primary: 27 75 67;
+    --color-primary-light: 43 107 96;
+    --color-accent: 232 135 30;
+    --color-accent-dark: 190 106 16;
+    --color-success: 63 143 92;
+    --color-danger: 193 68 60;
+    --color-border: 219 224 219;
+  }
+
+  .dark {
+    --color-base: 16 21 26;
+    --color-surface: 24 31 35;
+    --color-ink: 236 240 237;
+    --color-muted: 158 170 163;
+    --color-primary: 74 158 140;
+    --color-primary-light: 94 178 160;
+    --color-accent: 240 155 61;
+    --color-accent-dark: 214 130 40;
+    --color-success: 90 181 122;
+    --color-danger: 224 106 98;
+    --color-border: 45 54 58;
+  }
+
+  html {
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  body {
+    @apply bg-base text-ink antialiased;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Visible, consistent 2px focus ring on every interactive element */
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: rgb(var(--color-accent) / 0.25);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50
+      focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-white;
+  }
+
+  .card {
+    @apply rounded-card border border-border bg-surface;
+  }
+}
